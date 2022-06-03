@@ -1,0 +1,47 @@
+const randomCocktail = () => {
+  let randomNumber = Math.floor(Math.random() * 4)
+    switch (randomNumber) {
+      case 0:
+        return 'Negroni';
+      case 1:
+        return 'Old fashioned';
+      case 2:
+        return 'Whisky Sour';
+      case 3: 
+        return 'Margaritha';
+      case 4:
+        return 'Green Gimlet';
+    };
+};
+
+const randomServing = () => {
+  let randomNumber = Math.floor(Math.random() * 4)
+    switch (randomNumber) {
+      case 0:
+        return 'on the rocks';
+      case 1:
+        return 'with cherry garnish';
+      case 2:
+        return 'with a dash of bitters';
+      case 3: 
+        return 'and some nuts';
+      case 4:
+        return 'shaken not stirred';
+    };
+};
+
+const randomChaos = () => {
+  let randomNumber = Math.floor(Math.random() * 2)
+    switch (randomNumber) {
+      case 0:
+        return 'please';
+      case 1:
+        return 'AND SHOTS';
+      case 2:
+        return 'AND TEQUILA RACE FUCK YEAH!';
+    };
+};
+
+
+console.log(randomCocktail() + ' ' + randomServing() + ' ' + randomChaos());
+
