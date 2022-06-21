@@ -1,5 +1,11 @@
 // Goal is to integrate with html and CSS
-    const randomMessage = () => {
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = pepTalkGenerator;
+  }
+// insertAdjacentHTML?? (google)
+
+const randomMessage = () => {
         let randomNumber = Math.floor(Math.random() * 6);
         
         switch(randomNumber) {
@@ -18,6 +24,9 @@
                 
         };
 
-    };
+    }; 
+let pepTalkGenerator = randomMessage();
 
-    console.log(randomMessage());
+    //console.log(pepTalkGenerator);  
+
+   
